@@ -1,0 +1,23 @@
+{
+  "name": "node_example",
+  "version": "1.0.0",
+  "description": "Node Semana 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node nodeTarea.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeanMarco173/MiRNodeSem1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeanMarco173/MiRNodeSem1/issues"
+  },
+  "homepage": "https://github.com/JeanMarco173/MiRNodeSem1#readme",
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}
