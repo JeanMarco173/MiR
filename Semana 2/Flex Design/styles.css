@@ -1,125 +1,119 @@
 body {
-    margin: 0px;
+    font-family: 'Arial'
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+  }
+  
+  .header {
+    flex: 1;
+    display: flex;  
+    background-color: #46A44D;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .body {
+    flex: 10;
+    overflow: auto;
+  }
+  
+  .restaurant__container {
+    display: flex;  
+    height: 80px;
+    border: solid 1px #D0D0D0;
+    padding: 15px 10px 15px 10px;
+  }
+  
+  .photo__container {
+    width: 30%;
+  }
+  
+  .photo {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .information__container {
+    display: flex;  
+    flex-direction: column;
+    width: 70%;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .name__container {
+    display: flex;
+    align-items: center;
+    height: 33%;
+    font-size: 15px;
+    color: #626262
+  }
+  
+  .rating__container {
+    display: flex;
+    align-items: center;
+    height: 33%; 
+    font-size: 12px;
+    color: #99999A;
+  }
+  
+  .icon__start {
+    color: #46A44D;
+    margin-right: 2px
+  }
+  
+  .postition__container {
+    display: flex;
+    align-items: center;
+    height: 33%;
+    font-size: 12px;
+    color: #99999A;
+    font-weight: '600';
+  }
+  
+  .footer {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EBECEC
+  }
+  
+  .menu__option {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon__main {
+    font-size: 25px;
+    color: #A1A1A1;
+  }
+
+.principal__option {
+  position: absolute;
+  display: flex;
+  margin-top: -20px;
+  margin-left: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: solid 1px #D0D0D0;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width: 400px) {
-    html {
-        font-size: 14px
-    }
-    .background__top {
-        position: absolute;
-        background-color: #208DED;
-        width: 100%;
-        height: 200px;
-        transition: 2s;
-    }
-
-    .background__bottom {
-        background-color: #EAE4F4;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .login {
-        position: relative;
-        margin-top: 80px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #FFF;
-        width: 390px;
-        height: 340px;
-        padding: 0px;
-        border-radius: 5px;
-        box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .login__picture {
-        height: 90px;
-        text-align:center;
-    }
-
-    .login__picture--icon {
-        margin-top: 10px;
-        font-size: 80px;
-        color:#208EED;
-    }
-
-    .login__form {
-        height: 150px;
-    }
-
-    .input__container {
-        text-align:center;
-        margin-top: 30px;
-    }
-
-    .input {
-    	font-size: 1rem;
-        border-style: solid;
-        border-width: 0px 0px 2px 0px;
-        width: 350px;
-    }
-
-    .checkbox__container {
-        margin-top: 30px;
-        padding-left: 15px;
-    }
-
-    .login__footer {
-    	padding-top: 10px;
-        height: 60px;
-        text-align:center;
-    }
-
-    .button {
-        border: none;
-        color: white;
-        font-size: 1rem;
-        background-color:#208EED;
-        height: 30px;
-        width: 100px;
-        border-radius: 3px;
-    }
+.icon_plus {
+    font-size: 40px;
+    color: #46A44D;
 }
-
-@media (min-width: 540px) {
-    html {
-        font-size: 16px
-    }
-}
-
-@media (min-width: 720px) {
-	html {
-        font-size: 16px
-    }
-    .login {
-        width: 600px;
-    }
-    .checkbox__container {
-        padding-left: 120px;
-    }
-}
-
-@media (min-width: 960px) {
-    html {
-        font-size: 18px
-    }
-}
-
-@media (min-width: 1140px) {
-    html {
-        font-size: 21px
-    }
-}
-
-
-
-@media (min-width: 992px) {
-    .background__top {
-        position: absolute;
-        background-color: #071e33;
-        width: 100%;
-        height: 200px;
-        transition: 2s;
-    }
-}
+  
