@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.Button {
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+}
