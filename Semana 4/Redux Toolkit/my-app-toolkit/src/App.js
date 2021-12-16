@@ -5,8 +5,6 @@ import { decrement, increment, reset, toggle } from './features/counterSlice';
 
 function App() {
 
-  console.log();
-
   const { value, isVisible } = useSelector((state) => state.counter)
   const dispatch = useDispatch()
 
