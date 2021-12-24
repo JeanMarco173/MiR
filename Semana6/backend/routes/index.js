@@ -1,13 +1,13 @@
 import express from 'express';
 
+//Routes
+import userRoutes from './users.routes.js';
+import todosRoutes from './todos.routes.js'
+
 const app = express();
-/* 
-//const userRoutes = require('./routesWeb/userRoutes');
 
-// Routes
-import placesRoutes from './routes/places.routes.js';
-import usersRoutes from './routes/users.routes.js'; */
-
-//app.use('/user', require('./routesWeb/userRoutes'));
+//Define routes
+app.use('/users', userRoutes);
+app.use('/todos', todosRoutes);
 
 export default app;

@@ -3,15 +3,19 @@ import ENV, { nodEnv } from './index.js';
 
 const MONGO_URI = ENV[nodEnv].database.mongoUri;
 
-export const connectToDb = () => {
-  mongoose
-    .connect(MONGO_URI)
-    .then((connection) =>
-      console.log(
-        `MongoDb Connected: ${connection.connection.host}`.cyan.underline.bold
-      )
-    )
-    .catch((error) =>
-      console.log(`MongoDB connection error: ${error}`.red.bold)
-    );
+const options = {
+  maxPoolSize: 10,
+  serverSelectionTimeoutMS: 5000,
+  socketTimeoutMS: 45000,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 };
+
+export const connectToDb = () => {
+  mongoose.connect(MONGO_URI, options)
+  const { connection } = mongoose;
+  connection.once( 'open' , () => console.log('Connection stablished'.cyan.underline.bold));
+  connection.on( 'error' , (err) => console.log('Something went wrong'.red.bold));
+  return connection;
+};
+
